@@ -1,0 +1,80 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-image: url('../img/fondo.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  max-width: 300px;
+
+}
+
+h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 2.1rem;
+}
+
+h1 img {
+  margin-left: auto;
+  filter: drop-shadow(9px 7px 8px #7B68EE);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 0px solid;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input__buttom--style {
+  background-color: #30cac5;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/*
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #1E90FF;
+}
+*/
+
+.input__buttom--style:active {
+  background-color: #008080; 
+}
+
+/* Estilo Icono Plus */
+.plus {
+  position: absolute;
+  bottom: 48px;
+  right: 30px;
+}
+
+.plus img {
+  width: 150px; 
+  height: 150px; 
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 30px #f7b500); 
+}

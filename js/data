@@ -1,0 +1,283 @@
+const platos = [
+  {
+    nombre: "Sushi",
+    paisOrigen: "Japón",
+    sabor: ["dulce", "salado", "agrio", "umami"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Paella",
+    paisOrigen: "España",
+    sabor: ["sabroso", "mezcla de especias", "azafrán"],
+    comidaPrincipal: "Almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Hamburguesa",
+    paisOrigen: "Estados Unidos",
+    sabor: ["salado", "umami"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Muy alta"
+  },
+  {
+    nombre: "Ramen",
+    paisOrigen: "Japón",
+    sabor: ["umami", "salado"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Pasta Carbonara",
+    paisOrigen: "Italia",
+    sabor: ["salado", "umami"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Tacos",
+    paisOrigen: "México",
+    sabor: ["picante", "sabroso"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Muy alta"
+  },
+  {
+    nombre: "Ceviche",
+    paisOrigen: "Perú",
+    sabor: ["ácido", "salado", "picante"],
+    comidaPrincipal: "Almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Curry",
+    paisOrigen: "India",
+    sabor: ["picante", "aromático"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Poutine",
+    paisOrigen: "Canadá",
+    sabor: ["salado", "queso", "salsa gravy"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Sashimi",
+    paisOrigen: "Japón",
+    sabor: ["salado", "umami"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Arepa",
+    paisOrigen: "Venezuela",
+    sabor: ["salado", "queso"],
+    comidaPrincipal: "Desayuno o almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Mole",
+    paisOrigen: "México",
+    sabor: ["dulce", "picante", "chocolate"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Goulash",
+    paisOrigen: "Hungría",
+    sabor: ["picante", "sabroso"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Dumplings",
+    paisOrigen: "China",
+    sabor: ["salado", "umami"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Lasaña",
+    paisOrigen: "Italia",
+    sabor: ["salado", "queso", "sabroso"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Cuscús",
+    paisOrigen: "Marruecos",
+    sabor: ["salado", "especiado"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Kimchi",
+    paisOrigen: "Corea del Sur",
+    sabor: ["picante", "fermentado"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Fish and Chips",
+    paisOrigen: "Reino Unido",
+    sabor: ["salado", "vinagre"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Feijoada",
+    paisOrigen: "Brasil",
+    sabor: ["salado", "ahumado"],
+    comidaPrincipal: "Almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Pierogi",
+    paisOrigen: "Polonia",
+    sabor: ["salado", "queso"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Ratatouille",
+    paisOrigen: "Francia",
+    sabor: ["sabroso", "vegetariano"],
+    comidaPrincipal: "Cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Moussaka",
+    paisOrigen: "Grecia",
+    sabor: ["sabroso", "queso"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Empanadas",
+    paisOrigen: "Argentina",
+    sabor: ["salado", "jugoso"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Satay",
+    paisOrigen: "Indonesia",
+    sabor: ["picante", "dulce", "sabroso"],
+    comidaPrincipal: "Cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Caponata",
+    paisOrigen: "Italia",
+    sabor: ["agrio", "sabroso", "vegetariano"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Bibimbap",
+    paisOrigen: "Corea del Sur",
+    sabor: ["picante", "umami"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Gazpacho",
+    paisOrigen: "España",
+    sabor: ["frío", "refrescante"],
+    comidaPrincipal: "Almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Chicken Adobo",
+    paisOrigen: "Filipinas",
+    sabor: ["salado", "dulce", "soja"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Tiramisú",
+    paisOrigen: "Italia",
+    sabor: ["dulce", "café", "queso"],
+    comidaPrincipal: "Postre",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Peking Duck",
+    paisOrigen: "China",
+    sabor: ["crujiente", "salado", "dulce"],
+    comidaPrincipal: "Cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Tom Yum",
+    paisOrigen: "Tailandia",
+    sabor: ["picante", "ácido", "umami"],
+    comidaPrincipal: "Almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Feijoada",
+    paisOrigen: "Brasil",
+    sabor: ["sabroso", "salado", "ahumado"],
+    comidaPrincipal: "Almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Ceviche",
+    paisOrigen: "Perú",
+    sabor: ["ácido", "picante", "refrescante"],
+    comidaPrincipal: "Almuerzo",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Pierogi",
+    paisOrigen: "Polonia",
+    sabor: ["salado", "umami", "queso"],
+    comidaPrincipal: "Cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Sauerbraten",
+    paisOrigen: "Alemania",
+    sabor: ["agridulce", "umami", "mostaza"],
+    comidaPrincipal: "Cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Dolma",
+    paisOrigen: "Turquía",
+    sabor: ["sabroso", "frutos secos", "hierbas"],
+    comidaPrincipal: "Cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Kabsa",
+    paisOrigen: "Arabia Saudita",
+    sabor: ["especiado", "aromático"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Lomo Saltado",
+    paisOrigen: "Perú",
+    sabor: ["salado", "umami", "picante"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Rösti",
+    paisOrigen: "Suiza",
+    sabor: ["crujiente", "salado", "papas"],
+    comidaPrincipal: "Desayuno",
+    popularidad: "Alta"
+  },
+  {
+    nombre: "Miso Soup",
+    paisOrigen: "Japón",
+    sabor: ["umami", "salado", "algas"],
+    comidaPrincipal: "Almuerzo o cena",
+    popularidad: "Alta"
+  },
+ 
+];

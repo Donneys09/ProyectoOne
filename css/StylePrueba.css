@@ -1,0 +1,38 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top right, #8011c0, #0ed6d6);
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  max-width: 300px;
+  background-color: #fff;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.card h2 {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 8px;
+}
+.card a {
+  color: #007bff;
+  text-decoration: none;
+}
